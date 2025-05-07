@@ -2,13 +2,12 @@
 const SUPABASE_URL = 'SUPABASE_URL';
 const SUPABASE_KEY = 'SUPABASE_KEY';
 
-// Initialize Supabase client
-const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
-
 // DOM Elements
 const ideaForm = document.getElementById('ideaForm');
 const ideaInput = document.getElementById('ideaInput');
 const ideasList = document.getElementById('ideasList');
+
+let supabase; // Declare supabase variable globally
 
 // Load ideas from Supabase
 async function loadIdeas() {
@@ -130,6 +129,8 @@ ideaForm.addEventListener('submit', (e) => {
 const script = document.createElement('script');
 script.src = 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2';
 script.onload = () => {
+    // Initialize Supabase client after script is loaded
+    supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
     // Initial load
     loadIdeas();
 };
