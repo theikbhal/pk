@@ -1,6 +1,6 @@
 // Supabase configuration
-const SUPABASE_URL = 'SUPABASE_URL';
-const SUPABASE_KEY = 'SUPABASE_KEY';
+const SUPABASE_URL = 'https://ddfwaibqxxjlhqtpxxfn.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRkZndhaWJxeHhqbGhxdHB4eGZuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY0MTUwNTgsImV4cCI6MjA2MTk5MTA1OH0.y5Z-2yeAa-Is7h1C4XZiqto1tvCc_o-5lB9g22m6yIU';
 
 // DOM Elements
 const ideaForm = document.getElementById('ideaForm');
