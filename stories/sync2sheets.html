@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sync2Sheets Case Study - $9K MRR Notion Integration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .case-study {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .case-study h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+        .case-study .meta {
+            color: #6b7280;
+            margin-bottom: 2rem;
+        }
+        .case-study h2 {
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem;
+            color: var(--text-color);
+        }
+        .case-study h3 {
+            font-size: 1.4rem;
+            margin: 1.5rem 0 1rem;
+            color: var(--accent-color);
+        }
+        .case-study ul, .case-study ol {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+        .case-study li {
+            margin-bottom: 0.5rem;
+        }
+        .case-study .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .case-study .metric-card {
+            background: var(--secondary-background);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .case-study .metric-card h4 {
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+        .case-study .metric-card p {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        .case-study .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .case-study .tech-item {
+            background: var(--secondary-background);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        .case-study .tech-item strong {
+            color: var(--accent-color);
+        }
+        .case-study .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .case-study .social-links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--accent-color);
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+        .case-study .social-links a:hover {
+            background: var(--accent-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>ikbhal</h1>
+                <ul>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#updates">Updates</a></li>
+                    <li><a href="../index.html#open-source">Open Source</a></li>
+                    <li><a href="../index.html#contact">Connect</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <article class="case-study">
+            <h1>My Google Sheets Add-On For Notion Hit $9K MRR</h1>
+            <div class="meta">Published: May 7th, 2024</div>
+
+            <section>
+                <h2>About the Founder</h2>
+                <p><strong>Name:</strong> Leandro Zubrezki<br>
+                <strong>Location:</strong> Buenos Aires, Argentina<br>
+                <strong>Product:</strong> Sync2Sheets<br>
+                <strong>Website:</strong> <a href="https://sync2sheets.com" target="_blank">sync2sheets.com</a></p>
+            </section>
+
+            <section>
+                <h2>The Story</h2>
+                
+                <h3>Introduction</h3>
+                <p>Leandro is the founder of Sync2Sheets, a Google Workspace Add-On that syncs Notion databases with Google Sheets. While he's also built several integrations for Coda and is getting started with Quicktion (a new add-on for saving emails to Notion), Sync2Sheets remains his main focus.</p>
+
+                <h3>Backstory</h3>
+                <ul>
+                    <li>Started as a freelance software developer</li>
+                    <li>Returned to his original dream of building his own SaaS 3 years ago</li>
+                    <li>Initially wanted to learn coding to create his own products</li>
+                    <li>Studied electronic engineering but switched to software engineering</li>
+                    <li>Dropped out of college to focus on self-learning</li>
+                </ul>
+
+                <h3>Product Development</h3>
+                <p>The first version was built in 2 weeks with these key features:</p>
+                <ul>
+                    <li>Mapped font styles between Notion and Sheets</li>
+                    <li>Used conditional formatting and data validation</li>
+                    <li>Made sheets editable while maintaining sync</li>
+                    <li>Ensured column reordering wouldn't break sync</li>
+                </ul>
+
+                <h3>Growth and Revenue</h3>
+                <div class="metrics">
+                    <div class="metric-card">
+                        <h4>Monthly Revenue</h4>
+                        <p>$9K MRR</p>
+                    </div>
+                    <div class="metric-card">
+                        <h4>Customers</h4>
+                        <p>400+</p>
+                    </div>
+                    <div class="metric-card">
+                        <h4>LTV</h4>
+                        <p>~$300</p>
+                    </div>
+                    <div class="metric-card">
+                        <h4>Churn Rate</h4>
+                        <p>7%</p>
+                    </div>
+                </div>
+
+                <h3>Tech Stack</h3>
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <strong>Backend:</strong> Firebase (hosting, cloud functions, Firestore)
+                    </div>
+                    <div class="tech-item">
+                        <strong>Email:</strong> SendGrid (considering migration to Postmark)
+                    </div>
+                    <div class="tech-item">
+                        <strong>Analytics:</strong> Mixpanel
+                    </div>
+                    <div class="tech-item">
+                        <strong>Error Tracking:</strong> Sentry + Google's error reporting
+                    </div>
+                    <div class="tech-item">
+                        <strong>Customer Support:</strong> Tidio
+                    </div>
+                    <div class="tech-item">
+                        <strong>Payments:</strong> Paddle
+                    </div>
+                </div>
+
+                <h3>Key Learnings</h3>
+                <ol>
+                    <li>Focus on marketing and distribution from the start</li>
+                    <li>Don't wait for perfection - ship early</li>
+                    <li>Consider paid-only models with trials instead of free plans</li>
+                    <li>Balance product development with marketing efforts</li>
+                    <li>Build upon learnings and accumulated resources</li>
+                </ol>
+
+                <h3>Connect with Leandro</h3>
+                <div class="social-links">
+                    <a href="https://twitter.com/leandrozubrezki" target="_blank">Twitter</a>
+                    <a href="https://sync2sheets.com" target="_blank">Sync2Sheets</a>
+                    <a href="https://linkedin.com/in/leandrozubrezki" target="_blank">LinkedIn</a>
+                    <a href="https://quicktion.com" target="_blank">Quicktion</a>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Built with ❤️ in Public | <a href="https://github.com/theikbhal/pk" class="footer-link">View Source</a></p>
+        </div>
+    </footer>
+</body>
+</html> 
