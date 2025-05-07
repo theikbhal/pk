@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories - ikbhal</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .story-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .story-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: transform 0.2s;
+        }
+        .story-card:hover {
+            transform: translateY(-5px);
+        }
+        .story-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+        .back-link:hover {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>ikbhal</h1>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#updates">Updates</a></li>
+                    <li><a href="../index.html#open-source">Open Source</a></li>
+                    <li><a href="../index.html#contact">Connect</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <a href="../index.html" class="back-link">← Back to Home</a>
+                <h2>Case Studies & Stories</h2>
+                <p>Exploring inspiring journeys of founders, builders, and creators who are building in public.</p>
+            </div>
+        </section>
+
+        <section class="stories">
+            <div class="container">
+                <div class="story-grid">
+                    <article class="story-card">
+                        <h3>Sync2Sheets</h3>
+                        <p>How Leandro Zubrezki built a $9K MRR business by giving Notion the superpowers of Google Sheets.</p>
+                        <div class="story-meta">
+                            <span>March 2024</span>
+                            <a href="sync2sheets.html" class="project-link">Read Story →</a>
+                        </div>
+                    </article>
+                    <!-- More story cards will be added here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Built with ❤️ in Public | <a href="https://github.com/theikbhal/pk" class="footer-link">View Source</a></p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html> 
