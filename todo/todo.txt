@@ -1,0 +1,26 @@
+# Reading List & Tasks
+
+## Case Studies to Read
+- [x] Read Davis Baer's story about OneUp marketing strategy
+- [ ] Read Rick Blyth's Micro SaaS journey
+- [ ] Read Sync2Sheets case study
+
+## Implementation Tasks
+- [ ] Add dark mode support to todo app
+- [ ] Add task categories/tags
+- [ ] Add due dates for tasks
+- [ ] Add task priority levels
+- [ ] Add task search functionality
+
+## Future Features
+- [ ] Add task sharing capability
+- [ ] Add task export/import
+- [ ] Add task statistics and analytics
+- [ ] Add task reminders
+- [ ] Add task notes/description
+
+## Learning Goals
+- [ ] Study successful marketing strategies from case studies
+- [ ] Learn about different tech stacks used by successful startups
+- [ ] Understand common patterns in successful SaaS businesses
+- [ ] Document key learnings from each case study
