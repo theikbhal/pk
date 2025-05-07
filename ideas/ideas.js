@@ -130,7 +130,7 @@ const script = document.createElement('script');
 script.src = 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2';
 script.onload = () => {
     // Initialize Supabase client after script is loaded
-    supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+    supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
     // Initial load
     loadIdeas();
 };
