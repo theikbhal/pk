@@ -3,168 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stories - ikbhal</title>
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Success Stories</title>
     <style>
-        .story-grid {
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background: #fafafa;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 0;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .stories-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
+            gap: 30px;
+            padding: 20px 0;
         }
         .story-card {
-            background: var(--card-bg);
+            background: white;
             border-radius: 12px;
-            padding: 1.5rem;
-            transition: transform 0.2s;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
         }
         .story-card:hover {
             transform: translateY(-5px);
         }
+        .story-content {
+            padding: 20px;
+        }
         .story-meta {
+            background: #f5f5f5;
+            padding: 15px 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+        .story-title {
+            margin: 0 0 10px 0;
+            font-size: 1.4em;
+        }
+        .story-description {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .metrics {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 1rem;
-            font-size: 0.9rem;
-            color: var(--text-secondary);
+            gap: 15px;
+            margin-top: 15px;
+            font-size: 0.9em;
         }
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin-bottom: 2rem;
-            color: var(--text-secondary);
+        .metric {
+            background: #e8f4f8;
+            padding: 5px 10px;
+            border-radius: 4px;
+            color: #2c5282;
+        }
+        .read-more {
+            display: inline-block;
+            margin-top: 15px;
+            color: #2c5282;
             text-decoration: none;
+            font-weight: 500;
         }
-        .back-link:hover {
-            color: var(--accent-color);
+        .read-more:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="container">
-                <h1>ikbhal</h1>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../index.html#projects">Projects</a></li>
-                    <li><a href="../index.html#updates">Updates</a></li>
-                    <li><a href="../index.html#open-source">Open Source</a></li>
-                    <li><a href="../index.html#contact">Connect</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <div class="header">
+        <h1>Success Stories</h1>
+        <p>Learn from successful entrepreneurs and their journeys</p>
+    </div>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <a href="../index.html" class="back-link">← Back to Home</a>
-                <h2>Case Studies & Stories</h2>
-                <p>Exploring inspiring journeys of founders, builders, and creators who are building in public.</p>
+    <div class="stories-grid">
+        <article class="story-card">
+            <div class="story-content">
+                <h2 class="story-title">Boot.dev: Backend Development Courses</h2>
+                <p class="story-description">How Lane Wagner built a successful backend development learning platform generating $236K/month through an innovative RPG-style coding game approach.</p>
+                <div class="metrics">
+                    <span class="metric">$236K/mo revenue</span>
+                    <span class="metric">80% margin</span>
+                    <span class="metric">8 employees</span>
+                </div>
+                <a href="boot-dev.html" class="read-more">Read Full Story →</a>
             </div>
-        </section>
+            <div class="story-meta">
+                <p>Founder: Lane Wagner | Started: March 2020</p>
+            </div>
+        </article>
 
-        <section class="stories">
-            <div class="container">
-                <div class="story-grid">
-                    <article class="story-card">
-                        <h3>Sync2Sheets</h3>
-                        <p>How Leandro Zubrezki built a $9K MRR business by giving Notion the superpowers of Google Sheets.</p>
-                        <div class="story-meta">
-                            <span>March 2024</span>
-                            <a href="sync2sheets.html" class="project-link">Read Story →</a>
-                        </div>
-                    </article>
-                    <article class="story-card">
-                        <h3>Rick Blyth's Micro SaaS Journey</h3>
-                        <p>How a 20-year developer built a $120K/year business with Chrome extensions for Amazon sellers.</p>
-                        <div class="story-meta">
-                            <span>April 2022</span>
-                            <a href="rick-blyth.html" class="project-link">Read Story →</a>
-                        </div>
-                    </article>
-                    <article class="story-card">
-                        <h3>Davis Baer's Marketing Strategy</h3>
-                        <p>How OneUp reached $100K MRR using unorthodox marketing and personalization.</p>
-                        <div class="story-meta">
-                            <span>January 2019</span>
-                            <a href="davis-baer.html" class="project-link">Read Story →</a>
-                        </div>
-                    </article>
-                    <article class="story-card">
-                        <h3>GMass</h3>
-                        <p>How Ajay Goel built a $200K/month Gmail mail merge tool serving major tech companies.</p>
-                        <div class="story-meta">
-                            <span>March 2020</span>
-                            <a href="gmass.html" class="project-link">Read Story →</a>
-                        </div>
-                    </article>
-                    <div class="story-card">
-                        <h3>Hyperping</h3>
-                        <p>How a Solo Founder Built Hyperping to $15K MRR in 7 Years</p>
-                        <div class="story-meta">
-                            <span class="revenue">$15K MRR</span>
-                            <a href="hyperping.html" class="story-link">Read Story →</a>
-                        </div>
-                    </div>
-                    <div class="story-card">
-                        <h3>Baremetrics</h3>
-                        <p>How Josh Pigford Grew Baremetrics to $4M as a Side Project</p>
-                        <div class="story-meta">
-                            <span class="revenue">$333K MRR</span>
-                            <a href="baremetrics.html" class="story-link">Read Story →</a>
-                        </div>
-                    </div>
-                    <div class="story-card">
-                        <h3>Data Fetcher</h3>
-                        <p>How I Built An Airtable Plugin That Lets Users Manage Their Data Better</p>
-                        <div class="story-meta">
-                            <span class="revenue">$23K MRR</span>
-                            <a href="data-fetcher.html" class="story-link">Read Story →</a>
-                        </div>
-                    </div>
-                    <div class="story-card">
-                        <h3>Justin Welsh</h3>
-                        <p>How Justin Welsh Built A $2M Solopreneur Empire</p>
-                        <div class="story-meta">
-                            <span class="revenue">$317K MRR</span>
-                            <a href="justin-welsh.html" class="story-link">Read Story →</a>
-                        </div>
-                    </div>
-                    <div class="story-card">
-                        <h3>Spreadtheworld</h3>
-                        <p>How I Created A $2K/Month Startup Marketing Database Using No-Code Tools</p>
-                        <div class="story-meta">
-                            <span class="revenue">$2K MRR</span>
-                            <a href="spreadtheworld.html" class="story-link">Read Story →</a>
-                        </div>
-                    </div>
-                    <div class="story-card">
-                        <h3>Krit</h3>
-                        <p>How I Started A $91K/Month Software Agency After A Failed Product Launch</p>
-                        <div class="story-meta">
-                            <span class="revenue">$91K MRR</span>
-                            <a href="krit.html" class="story-link">Read Story →</a>
-                        </div>
-                    </div>
-                    <!-- More story cards will be added here -->
+        <!-- Template for future stories -->
+        <article class="story-card">
+            <div class="story-content">
+                <h2 class="story-title">Coming Soon</h2>
+                <p class="story-description">More inspiring success stories are on the way. Stay tuned for more entrepreneurial journeys and valuable insights.</p>
+                <div class="metrics">
+                    <span class="metric">Coming soon</span>
                 </div>
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>Built with ❤️ in Public | <a href="https://github.com/theikbhal/pk" class="footer-link">View Source</a></p>
-        </div>
-    </footer>
-
-    <script src="../script.js"></script>
+            <div class="story-meta">
+                <p>More stories coming soon</p>
+            </div>
+        </article>
+    </div>
 </body>
 </html> 
